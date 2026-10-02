@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ekskul Hub - Formulir Pendaftaran</title>
+
+    <!-- Bootstrap Offline -->
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- CSS Sendiri -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg bg-primary sticky-top" style="--bs-text-opacity: .4;">
+
+        <div class="container">
+
+            <a class="navbar-brand d-flex align-items-center gap-3"
+                href="#beranda">
+
+                <span class="logo"><img src="logosmktnpalatar.png" width="60%" ></i></span>
+
+                <span class="brand-name">
+                    SMKN Tengaran
+                </span>
+
+            </a>
+
+
+            <!-- Tombol Navbar HP -->
+
+            <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Buka navigasi">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- Menu Navbar -->
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#beranda">
+                            Beranda
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#daftar">
+                            Daftar Ekskul
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">
+                            Bantuan
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="btn btn-masuk" href="#daftar">
+                            Masuk
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="hero-section" id="beranda">
+
+        <!-- Hiasan lingkaran -->
+
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+
+
+        <div class="container text-center">
+
+            <span class="badge-tahun">
+             Pendaftaran tahun ajaran baru
+            </span>
+
+
+            <h1 class="hero-title mt-4">
+
+                Temukan<br>
+                ekstrakurikuler yang<br>
+                cocok buatmu
+
+            </h1>
+
+
+            <!-- FOTO DAN DESKRIPSI DIHILANGKAN -->
+
+
+            <!-- Statistik -->
+
+            <div class="row stats-row justify-content-center">
+
+                <div class="col-4">
+
+                    <h2>12+</h2>
+
+                    <p>Pilihan ekskul</p>
+
+                </div>
+
+
+                <div class="col-4">
+
+                    <h2>860</h2>
+
+                    <p>Siswa terdaftar</p>
+
+                </div>
+
+
+                <div class="col-4">
+
+                    <h2>4.8</h2>
+
+                    <p>Rating kepuasan</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FORM PENDAFTARAN ================= -->
+
+    <section class="form-section" id="daftar">
+
+        <div class="container">
+
+            <div class="form-card mx-auto">
+
+
+                <!-- Judul Form -->
+
+                <div class="text-center mb-4">
+
+                    <p class="form-subtitle">
+                        Tahun ajaran baru
+                    </p>
+
+                    <h2 class="form-title">
+                        Daftar Ekstrakurikuler
+                    </h2>
+
+                    <p class="form-description">
+                        Isi datamu di bawah ini untuk bergabung
+                        dengan kegiatan pilihanmu.
+                    </p>
+
+                </div>
+
+
+
+                <!-- FORM -->
+
+                <form id="formPendaftaran" novalidate>
+
+
+                    <!-- NAMA LENGKAP -->
+
+                    <div class="mb-4">
+
+                        <label for="nama" class="form-label">
+                            Nama Lengkap
+                        </label>
+
+                        <input type="text"
+                            class="form-control"
+                            id="nama"
+                            placeholder="Tulis nama lengkapmu"
+                            autocomplete="name">
+
+                    </div>
+
+
+
+                    <!-- KELAS -->
+
+                    <div class="mb-4">
+
+                        <label for="kelas" class="form-label">
+                            Kelas
+                        </label>
+
+                        <select class="form-select"
+                            id="kelas">
+
+                            <option value="">- Pilih -</option>
+
+                            <option value="X RPL">X RPL 1</option>
+                            <option value="XI RPL">X RPL 2</option>
+                            <option value="XII RPL">X RPL 3</option>
+                            <option value="XII RPL">X RPL 4</option>
+
+                            <option value="X TKJ">X TKJ 1</option>
+                            <option value="XI TKJ">X TKJ 2</option>
+                            <option value="XII TKJ">X TKJ 3</option>
+
+                            <option value="X TKR">X TKR 1</option>
+                            <option value="XI TKR">X TKR 2</option>
+                            <option value="XII TKR">X TKR 3</option>
+
+                            <option value="X TSM">X TSM 1</option>
+                            <option value="XI TSM">X TSM 2</option>
+                            <option value="XII TSM">X TSM 3</option>
+
+                            <option value="X Kuliner">X Kuliner 1</option>
+                            <option value="XI Kuliner">X Kuliner 2</option>
+                            <option value="XII Kuliner">X Kuliner 3</option>
+
+                            <option value="X Busana">X Busana 1</option>
+                            <option value="XI Busana">X Busana 2</option>
+                            <option value="XII Busana">X Busana 3</option>
+
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- EKSTRAKURIKULER -->
+
+                    <div class="mb-4">
+
+                        <label for="ekskul" class="form-label">
+                            Ekstrakurikuler
+                        </label>
+
+                        <select class="form-select"
+                            id="ekskul">
+
+                            <option value="">- Pilih -</option>
+
+                            <option value="Seni Tari">
+                                Seni Tari
+                            </option>
+
+                            <option value="Pramuka">
+                                Pramuka
+                            </option>
+
+                            <option value="Jurnalistik">
+                                Jurnalistik
+                            </option>
+
+                            <option value="Futsal">
+                                Futsal
+                            </option>
+
+                            <option value="PMR">
+                                PMR
+                            </option>
+
+                            <option value="MTQ">
+                                MTQ
+                            </option>
+
+                            <option value="Voli">
+                                Voli
+                            </option>
+
+                             <option value="Paskibra">
+                                Paskibra
+                            </option>
+
+                             <option value="Padus">
+                                Padus
+                            </option>
+
+                             <option value="Jepang">
+                                Jepang
+                            </option>
+
+                             <option value="Drumband">
+                                Drumband
+                            </option>
+
+                             <option value="Silat">
+                                Silat
+                            </option>
+
+                             <option value="Rohis">
+                                Rohis
+                            </option>
+
+                             <option value="Foster">
+                                Foster
+                            </option>
+
+                             <option value="Voli">
+                                Voli
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+
+                    <!-- EMAIL -->
+
+                    <div class="mb-4">
+
+                        <label for="email" class="form-label">
+                            Email
+                        </label>
+
+                        <input type="email"
+                            class="form-control"
+                            id="email"
+                            placeholder="nama@sekolah.sch.id"
+                            autocomplete="email">
+
+                    </div>
+
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="mb-4">
+
+                        <label for="password" class="form-label">
+                            Password
+                        </label>
+
+                        <input type="password"
+                            class="form-control"
+                            id="password"
+                            placeholder="Min. 8 karakter"
+                            autocomplete="new-password">
+
+                    </div>
+
+
+
+                    <!-- KONFIRMASI PASSWORD -->
+
+                    <div class="mb-4">
+
+                        <label for="konfirmasi" class="form-label">
+                            Konfirmasi
+                        </label>
+
+                        <input type="password"
+                            class="form-control"
+                            id="konfirmasi"
+                            placeholder="Ulangi password"
+                            autocomplete="new-password">
+
+                    </div>
+
+
+
+                    <!-- PESAN SUKSES -->
+
+                    <div id="pesanSukses"
+                        class="alert alert-success d-none"
+                        role="alert">
+
+                        Pendaftaran Berhasil!
+
+                    </div>
+
+
+
+                    <!-- TOMBOL SUBMIT -->
+
+                    <button type="submit"
+                        class="btn btn-daftar w-100">
+
+                        Daftar Sekarang
+
+                    </button>
+
+
+                </form>
+
+
+
+                <!-- SUDAH DAFTAR -->
+
+                <p class="text-center sudah-daftar">
+
+                    Sudah pernah daftar?
+
+                    <a href="#footer">
+                        Hubungi wali kelas
+                    </a>
+
+                </p>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer-section" id="footer">
+
+        <div class="container">
+
+            <div class="row g-4">
+
+
+                <!-- BRAND -->
+
+                <div class="col-lg-6">
+
+                    <div class="d-flex align-items-center gap-3 mb-3">
+
+                        <span class="logo"></span>
+
+                        <span class="brand-name">
+                            SMKN Tengaran
+                        </span>
+
+                    </div>
+
+
+                    <p class="footer-description">
+
+                        Platform pendaftaran ekstrakurikuler
+                        untuk siswa SMA Harapan Bangsa.
+                        Satu tempat buat semua kegiatan sekolahmu.
+
+                    </p>
+                </div>
+
+
+
+                <!-- NAVIGASI -->
+
+                <div class="col-6 col-lg-3">
+
+                    <h5>Navigasi</h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#beranda">
+                                Beranda
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#daftar">
+                                Daftar Ekskul
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Jadwal Kegiatan
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+
+                <!-- BANTUAN -->
+
+                <div class="col-6 col-lg-3">
+
+                    <h5>Bantuan</h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#daftar">
+                                Panduan Pendaftaran
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Pertanyaan Umum
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#footer">
+                                Hubungi Wali Kelas
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- INFORMASI SEKOLAH -->
+
+            <div class="school-info mt-5">
+
+                <h5>Sekolah</h5>
+
+                <p>SMKN Tengaran</p>
+
+                <p>Jl. Pendidikan No. 12</p>
+
+                <p>info@sata.sch.id</p>
+
+            </div>
+
+
+
+            <!-- COPYRIGHT -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Ekskul Hub · SMKN Tengaran
+                </p>
+
+                <p>
+                    Fanesya Aziliana Putri (10)
+                    <br>
+                    Tiara Rizka Arda Musdalifag (32)
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <!-- Bootstrap Offline JS -->
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JavaScript Sendiri -->
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

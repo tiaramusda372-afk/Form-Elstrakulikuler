@@ -1,0 +1,518 @@
+/* ================= RESET ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    padding: 18px 0;
+    z-index: 1000;
+}
+
+.logo {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e5e6ea;
+    color: #f4f4f4;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    border-radius: 17px;
+}
+
+.brand-name {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #38251b;
+}
+
+.nav-link {
+    color: #000000 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #567beb !important;
+}
+
+.btn-masuk {
+    background: #f7f7f8;
+    color: #000000;
+
+    border-radius: 30px;
+    padding: 12px 30px;
+
+    font-weight: bold;
+    border: none;
+}
+
+.btn-masuk:hover {
+    background: #567beb;
+    color: white;
+}
+
+
+/* ================= HERO ================= */
+
+.hero-section {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #567beb,
+        #fefefe
+    );
+
+    padding: 70px 0 50px;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(217, 238, 253, 0.16);
+
+    pointer-events: none;
+}
+
+.circle-1 {
+    width: 340px;
+    height: 340px;
+
+    right: -70px;
+    top: -120px;
+}
+
+.circle-2 {
+    width: 150px;
+    height: 150px;
+
+    left: -35px;
+    top: 300px;
+}
+
+.badge-tahun {
+    display: inline-block;
+
+    background: #fff0df;
+    color: #567beb;
+
+    padding: 12px 25px;
+    border-radius: 30px;
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.hero-title {
+    font-family: Georgia, serif;
+
+    font-size: clamp(36px, 5vw, 62px);
+    line-height: 1.12;
+
+    font-weight: bold;
+    color: #38251b;
+}
+
+
+/* ================= STATISTIK ================= */
+
+.stats-row {
+    max-width: 800px;
+    margin: 100px auto 0;
+}
+
+.stats-row h2 {
+    font-family: Georgia, serif;
+
+    font-size: 40px;
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.stats-row p {
+    font-size: 16px;
+    color: #725b4b;
+
+    margin: 0;
+}
+
+
+/* ================= FORM ================= */
+
+.form-section {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #567beb,
+        #fcfbfb
+    );
+
+    padding: 70px 0;
+}
+
+.form-card {
+    max-width: 650px;
+
+    background: #fffdf9;
+
+    border-radius: 38px;
+
+    padding: 55px 40px;
+
+    box-shadow: 0 10px 30px rgba(100, 50, 10, 0.08);
+}
+
+.form-subtitle {
+    font-family: Georgia, serif;
+    font-style: italic;
+
+    color: #567beb;
+    font-size: 23px;
+
+    margin-bottom: 10px;
+}
+
+.form-title {
+    font-family: Georgia, serif;
+
+    font-size: 38px;
+    font-weight: bold;
+
+    margin-bottom: 14px;
+}
+
+.form-description {
+    color: #8b7c70;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: #49372b;
+    margin-bottom: 10px;
+}
+
+.form-control,
+.form-select {
+    height: 70px;
+
+    border: 2px solid #eee4d8;
+    border-radius: 22px;
+
+    padding: 0 24px;
+
+    font-size: 18px;
+    color: #665a51;
+
+    background-color: #fffdf9;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #567beb;
+
+    box-shadow: 0 0 0 4px rgba(237, 116, 41, 0.12);
+}
+
+
+/* ================= VALIDASI ================= */
+
+/* Error */
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+    border: 2px solid #567beb;
+    background-image: none;
+}
+
+
+/* Berhasil */
+
+.form-control.is-valid,
+.form-select.is-valid {
+    border: 2px solid #198754;
+    background-image: none;
+}
+
+
+/* Pesan error */
+
+.error-message {
+    display: block;
+
+    color: #567beb;
+
+    font-size: 14px;
+
+    margin-top: 6px;
+}
+
+
+/* ================= BUTTON ================= */
+
+.btn-daftar {
+    height: 78px;
+
+    background: linear-gradient(
+        90deg,
+        #567beb,
+        #ffffff
+    );
+
+    border: none;
+    border-radius: 25px;
+
+    color: white;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    box-shadow: 0 12px 20px rgba(225, 93, 20, 0.18);
+}
+
+.btn-daftar:hover {
+    background: #567beb;
+    color: white;
+}
+
+.sudah-daftar {
+    color: #8b7c70;
+
+    font-size: 17px;
+
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.sudah-daftar a {
+    color: #567beb;
+
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* ================= FOOTER ================= */
+
+.footer-section {
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #f2f2f3,
+        #567beb
+    );
+
+    padding: 65px 0 25px;
+
+    color: #5e3827;
+}
+
+.footer-section .brand-name {
+    color: #3d261b;
+}
+
+.footer-description {
+    font-size: 19px;
+    line-height: 1.8;
+
+    max-width: 470px;
+}
+
+.footer-section h5 {
+    font-size: 20px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+
+    margin-top: 25px;
+}
+
+.social-icons span {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(150, 70, 20, 0.13);
+
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+.footer-links {
+    padding: 0;
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    text-decoration: none;
+
+    color: #6b4531;
+
+    font-size: 18px;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.school-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(100, 50, 20, 0.2);
+
+    margin-top: 35px;
+    padding-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+
+    gap: 15px;
+    flex-wrap: wrap;
+
+    font-size: 16px;
+}
+
+
+/* ================= RESPONSIVE HP ================= */
+
+@media (max-width: 576px) {
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .brand-name {
+        font-size: 25px;
+    }
+
+    .hero-section {
+        padding: 50px 0 35px;
+    }
+
+    .badge-tahun {
+        font-size: 14px;
+        padding: 11px 17px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .stats-row {
+        margin-top: 75px;
+    }
+
+    .stats-row h2 {
+        font-size: 30px;
+    }
+
+    .stats-row p {
+        font-size: 13px;
+    }
+
+    .form-section {
+        padding: 35px 0;
+    }
+
+    .form-card {
+        padding: 35px 22px;
+        border-radius: 30px;
+    }
+
+    .form-subtitle {
+        font-size: 20px;
+    }
+
+    .form-title {
+        font-size: 30px;
+    }
+
+    .form-description {
+        font-size: 16px;
+    }
+
+    .form-label {
+        font-size: 16px;
+    }
+
+    .form-control,
+    .form-select {
+        height: 65px;
+
+        font-size: 16px;
+        border-radius: 18px;
+
+        padding: 0 18px;
+    }
+
+    .btn-daftar {
+        height: 70px;
+        font-size: 21px;
+    }
+
+    .footer-section {
+        padding-top: 45px;
+    }
+
+    .footer-description {
+        font-size: 16px;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+
+}
